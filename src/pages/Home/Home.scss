@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 100px;
+
+    .left{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        h1{
+            font-size: 48px;
+            color: #1F1F1F;
+        }
+    
+        h3{
+            font-size: 24px;
+            color: #515151;
+            font-weight: 400;
+        }
+
+        .buttons{
+            display: flex;
+            gap:30px;
+            
+        }
+
+        .buttons button{
+            width: 192px;
+            height: 48px;
+            border-radius: 8px;
+            -webkit-box-shadow: 10px 10px 30px -11px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 30px -11px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 30px -11px rgba(0,0,0,0.75);
+        }
+
+        .buttons .btn_usuaria{  
+                background-color: #018762;
+                border: none;
+                
+                a{
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                
+        }
+
+        .buttons .btn_profissional{  
+            background-color: #FFFFFF;
+            border: solid 2px #018762;
+
+            a{
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                text-decoration: none;
+                color: #018762;
+            }
+            
+        }
+   
+    }
+
+    .right img{
+        width: 555px;
+    }
+    
+}
+
+
+@media (max-width: 800px)
+{
+  .home
+   {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    width: 100%;
+
+    .left{
+        width: 100%;
+    }
+
+    .right img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+   }
+
+   .container{
+        width: 70%;
+   }
+
+   
+}
